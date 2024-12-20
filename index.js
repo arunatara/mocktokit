@@ -40,7 +40,7 @@ module.exports = port => {
           history.push(state)
           res.json(result)
         } catch (err) {
-          // TODO mimic GitHub response
+          // TODO mimic GitHub is response
           console.error(err.stack)
           res.status(500).json({ error: err.message })
         }
